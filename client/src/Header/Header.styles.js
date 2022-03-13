@@ -19,3 +19,6 @@ export const Buttons = styled.h3`
     text-align: right;
     padding-right: 3rem;
     `;
+
+export const ContactButton = styled.h3`
+`;

@@ -22,7 +22,7 @@ const Modal = ({ isOpen, close, children }) => {
     return (
     
     <div>
-        <div ref={divRef} img= {BackgroundImg}>
+        <div ref={contentRef}>
             {children}
         </div>
     </div>
