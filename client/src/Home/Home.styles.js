@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     background-image: url(${props => props.img});
     background-size: cover;
-    margin-top: 1rem;
     border-radius: 10px;
 
     @media (max-width: 600px) {
@@ -25,15 +26,12 @@ export const Content = styled.div`
     `;
 
 export const Bio = styled.p`
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
-    font-family: 'Oswald', sans-serif;
-    text-align: left;
     `;
 
 export const Title = styled.h1`
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
     color: white;
     padding: .5rem;
     text-decoration: underline;
@@ -41,10 +39,9 @@ export const Title = styled.h1`
 
 export const List = styled.li`
     color: white;
-    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     text-align: left;
-    padding: .4rem;
+    padding: .5rem;
     `;
     
 

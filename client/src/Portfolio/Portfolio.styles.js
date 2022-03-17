@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+    background-color: black;
+    `;
+
 export const PortfolioCards = styled.div`
     display:flex;
     flex-wrap: wrap;
@@ -7,3 +11,4 @@ export const PortfolioCards = styled.div`
     padding: 10px;  
     
 `;
+

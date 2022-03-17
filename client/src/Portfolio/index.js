@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ArtCard from '../ArtCard';
 
-import { PortfolioCards } from './Portfolio.styles';
+import { Wrapper, PortfolioCards } from './Portfolio.styles';
 
 const Portfolio = () => {
 const [art, setArt] = useState([]);
@@ -18,9 +18,9 @@ const artCards =art.map(art =>
 
     return (
  
-        <>
+        <Wrapper>
         <PortfolioCards>{artCards}</PortfolioCards>
-        </>
+        </Wrapper>
 
     );
     }
