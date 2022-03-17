@@ -5,13 +5,29 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5rem;
-  border-bottom: 2px solid Black;
+  border-bottom: 3px solid Black;
   `
 
-export const Logo = styled.h1`
-    font-size: 3rem;
-    text-align: left;
-    padding-left: 3rem;
+export const HeaderLogo = styled.img`
+    width:  auto;
+    max-height: 20rem;
+    position: relative;
+    left: 0%;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+    @media (max-width: 600px) {
+        width:  200px;
+        height: auto;
+        position: relative;
+        align-items: center;
+        left: -150%;
+        padding-top: 10px;
+        margin: 0;
+        display: block;
+        
+    }
 `;
 
 export const Buttons = styled.h3`

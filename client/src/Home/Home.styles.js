@@ -20,13 +20,13 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    height: 1000px;
+    height: auto;
     
     `;
 
 export const Bio = styled.p`
     font-size: 2.5rem;
-    color:white;
+    color: white;
     font-family: 'Oswald', sans-serif;
     text-align: left;
     `;

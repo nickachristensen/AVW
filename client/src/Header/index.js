@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
-import { Wrapper, Logo, Buttons, ContactButton } from './Header.styles';
+import { Wrapper, Buttons, ContactButton, HeaderLogo } from './Header.styles';
+import Logo from "../img/Logo.PNG"
 import Modal from "../Modal";
 
 const Header = () => {
@@ -35,11 +36,9 @@ const Header = () => {
 
     return (
         <Wrapper>
-        <Logo>
         <Link to= '/'>
-            AVW
+        <HeaderLogo src={Logo} alt="homebackground"/>
         </Link>
-        </Logo>
         <Buttons>
         <Link to= '/portfolio'>
         Portfolio
