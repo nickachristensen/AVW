@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 import { Wrapper, Logo, Buttons, ContactButton } from './Header.styles';
 import Modal from "../Modal";
@@ -35,10 +36,14 @@ const Header = () => {
     return (
         <Wrapper>
         <Logo>
+        <Link to= '/'>
             AVW
+        </Link>
         </Logo>
         <Buttons>
+        <Link to= '/portfolio'>
         Portfolio
+        </Link>
         <ContactButton onClick={() => setOpen((isOpen) => !isOpen)}>Contact</ContactButton>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
             <div>
