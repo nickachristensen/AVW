@@ -1,7 +1,57 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "Destroying data..."
+
+Portfolio.destroy_all
+
+puts "Start seeding!"
+
+puts "...seeding Portfolio!"
+
+Portfolio.create(name: "Dottie", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463822/AVW/Portfolio/1_Dottie_Private_Commission_Watercolor_on_Paper_18_x_24_2022.heic", description: "Private Commission, 18” x 24”, 2022", category: "Watercolor on Paper")
+Portfolio.create(name: "Central Ohio Freedom Fund Logo", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463823/AVW/Portfolio/2_Central_Ohio_Freedom_Fund_Logo_Digital_2021.jpg", description: "2021", category: "Digital")
+Portfolio.create(name: "Sirens of Tequila", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463809/AVW/Portfolio/2.5_Sirens_of_Tequila_Mural_for_Condado_Tacos_15_x_15_2019_Collaboration_with_Adam_Brouillette_Katie_Golonka_Lindsay_Pilko.jpg", description: "Mural for Condado Tacos, 15' x 15', 2019, Collaboration with Adam Brouillette, Katie Golonka, Lindsay Pilko", category: "Mural")
+Portfolio.create(name: "Orchid and Ivy", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463808/AVW/Portfolio/3_Orchid_and_Ivy_Mural_for_The_Alibi_Cocktail_and_Bourbon_Lounge_15_x_8_2020_Collaboration_with_Rachel_Kaufman.heic", description: "Mural for The Alibi Cocktail and Bourbon Lounge, 15' x 8', 2020, Collaboration with Rachel Kaufman", category: "Mural")
+Portfolio.create(name: "Bolt Cutters for Assata", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463808/AVW/Portfolio/4_Bolt_Cutters_for_Assata_Digital_2020.jpg", description: "2020", category: "Digital")
+Portfolio.create(name: "Miss Rita", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463800/AVW/Portfolio/5_Miss_Rita_Private_Commission_Watercolor_on_Paper_8_x_8_2021.heic", description: "Private Commission, 8” x 8”, 2021", category: "Watercolor on Paper")
+Portfolio.create(name: "The Reader", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463802/AVW/Portfolio/6_The_Reader_Illustration_for_The_Color_of_Freedom_Coloring_Book_Digital_2021.jpg", description: "Illustration for The Color of Freedom Coloring Book, 2021", category: "Digital")
+Portfolio.create(name: "Matt's Patron Babe", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463817/AVW/Portfolio/6.5_Matt_s_Patron_Babe_Acrylic_on_Canvas_18_x_24_2020.jpg", description: "Acrylic on Canvas, 18” x 24”, 2020", category: "Canvas")
+Portfolio.create(name: "Justice", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463801/AVW/Portfolio/7_Justice_Illustration_for_The_Color_of_Freedom_Coloring_Book_Digital_2021.jpg", description: "Illustration for The Color of Freedom Coloring Book, 2021", category: "Digital")
+Portfolio.create(name: "Sun Seeker", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463800/AVW/Portfolio/8_Sun_Seeker_Mini_Mural_for_Virtual_Scrawl_Acrylic_on_Wood_12_x_12_2020.jpg", description: "Mini Mural for Virtual Scrawl, Acrylic on Wood, 12”x 12”, 2020", category: "Mural")
+Portfolio.create(name: "Condado Polaris", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463813/AVW/Portfolio/9_Condado_Polaris_Back_Bar_Text_for_Condado_Tacos_8_x_6_2018_Collaboration_with_Katie_Golonka_and_Brian_Gonnella_.jpg", description: "Back Bar Text for Condado Tacos, 8' x 6', 2018, Collaboration with Katie Golonka and Brian Gonnella", category: "Mural")
+Portfolio.create(name: "Jupiter", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463800/AVW/Portfolio/10_Jupiter_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Jupiter from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "The Voter", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463801/AVW/Portfolio/11_The_Voter_Illustration_for_The_Color_of_Freedom_Coloring_Book_Digital_2021.jpg", description: "Illustration for The Color of Freedom Coloring Book, 2021", category: "Digital")
+Portfolio.create(name: "Do Your Dang Census!", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463803/AVW/Portfolio/11.5_Do_Your_Dang_Census_Digital_2020.jpg", description: "2020", category: "Digital")
+Portfolio.create(name: "Clytemnestra", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463814/AVW/Portfolio/11.25_Clytemnestra_from_the_Greek_Mythology_Series_Acrylic_on_Canvas_24_x_24_2019.jpg", description: "Clytemnestra from the Greek Mythology Series, Acrylic on Canvas, 24” x 24”, 2019", category: "Canvas")
+Portfolio.create(name: "Rush", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463803/AVW/Portfolio/12_Rush_Private_Commission_Watercolor_on_Paper_18_x_24_2021.heic", description: "Private Commission, Watercolor on Paper, 18” x 24”, 2021", category: "Watercolor on Paper")
+Portfolio.create(name: "Made with Real Ghost Peppers", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463802/AVW/Portfolio/13_Made_with_Real_Ghost_Peppers_Mural_for_Condado_Tacos_8_x_8_2019.jpg", description: "Mural for Condado Tacos, 8' x 8', 2019", category: "Mural")
+Portfolio.create(name: "Taurus", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463818/AVW/Portfolio/13.heic", description: "Taurus from the Zodiac Series, Framed Open Edition Digital Print, 8” x 10”, 2020", category: "Digital")
+Portfolio.create(name: "Uranus", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463800/AVW/Portfolio/10_Jupiter_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Uranus from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Queen Dragon", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463802/AVW/Portfolio/15_Queen_Dragon_Mural_for_Condado_Tacos_12_x_10_2019.jpg", description: "Mural for Condado Tacos, 12'x 10', 2019", category: "Mural")
+Portfolio.create(name: "Mercury", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463803/AVW/Portfolio/15.5_Mercury_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Mercury from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Food Fight!", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463803/AVW/Portfolio/16_Food_Fight_Detail_Mural_for_Condado_Tacos_10_x_16_2019.jpg", description: "Mural for Condado Tacos, 10'x 16', 2019", category: "Mural")
+Portfolio.create(name: "Octo-pirate", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463814/AVW/Portfolio/16.heic", description: "Octo-pirate for Alley Islands, 3' x 3', 2019, Background by Steve Ehret", category: "")
+Portfolio.create(name: "Carly", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463816/AVW/Portfolio/17_Carly_Private_Commission_Watercolor_on_Paper_8_x_10_2022.heic", description: "Carly Private Commission, 8” x 10”, 2022", category: "Watercolor on Paper")
+Portfolio.create(name: "C.R.E.A.M.", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463821/AVW/Portfolio/17.5_C.R.E.A.M._Linoleum_Relief_Print_11_x_14_2017.jpg", description: "Linoleum Relief Print, 11”x 14”, 2017", category: "Print")
+Portfolio.create(name: "Amy's Pendulum Map", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463805/AVW/Portfolio/18_Amy_s_Pendulum_Map_Fabric_Paint_on_Cloth_12_x_12_2021.jpg", description: "Fabric Paint on Cloth, 12” x 12”, 2021", category: "")
+Portfolio.create(name: "Pluto", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463803/AVW/Portfolio/19_Pluto_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Pluto from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Memento Vivere", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463806/AVW/Portfolio/20_Memento_Vivere_Memorial_Portrait_Digital_2021.jpg", description: "Memorial Portrait, 2021", category: "Digital")
+Portfolio.create(name: "Venus", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463804/AVW/Portfolio/21_Venus_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Venus from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Prizes!", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463818/AVW/Portfolio/22_Prizes_Mural_for_Condado_Tacos_6_x_12_2018_Collaboration_with_Matt_Spahr_and_Lindsay_Pilko.jpg", description: "Mural for Condado Tacos, 6' x 12', 2018, Collaboration with Matt Spahr and Lindsay Pilko", category: "Mural")
+Portfolio.create(name: "Peezler Skeeball Stand", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463821/AVW/Portfolio/23_Peezler_Skeeball_Stand_Mural_for_Condado_Tacos_8_x_12_2018_Collaboration_with_Lizzee_Solomon_Matt_Spahr_Lindsay_Pilko.jpg", description: "Mural for Condado Tacos, 8' x 12', 2018, Collaboration with Lizzee Solomon, Matt Spahr, Lindsay Pilko", category: "Mural")
+Portfolio.create(name: "Pink Lady", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463804/AVW/Portfolio/24_Pink_Lady_Mural_for_Breakaway_Music_Festival_16_x_8_2019.jpg", description: "Mural for Breakaway Music Festival, 16' x 8', 2019", category: "Mural")
+Portfolio.create(name: "Neptune", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463805/AVW/Portfolio/25_Neptune_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Neptune from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Small Batch Logo", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463822/AVW/Portfolio/26_Small_Batch_Logo_Digital_2021.jpg", description: "2021", category: "Digital")
+Portfolio.create(name: "Queen Cali", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463821/AVW/Portfolio/27_Queen_Cali_Private_Commission_Watercolor_on_Paper_9_x_12_2021.heic", description: "Private Commission, 9”x 12”, 2021", category: "Watercolor on Paper")
+Portfolio.create(name: "9 of Swords", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463805/AVW/Portfolio/28_9_of_Swords_Linoleum_Relief_Print_11_x_14_2017.jpg", description: "Linoleum Relief Print, 11” x 14” 2017", category: "Print")
+Portfolio.create(name: "Saturn", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463805/AVW/Portfolio/29_Saturn_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Saturn from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Queen Dragon's Lair", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463806/AVW/Portfolio/30_Queen_Dragon_s_Lair_Mural_for_Condado_Tacos_10_x_12_2019_Collaboration_with_Adam_Hernandez_Lindsay_Pilko.jpg", description: "Mural for Condado Tacos, 10'x 12', 2019, Collaboration with Adam Hernandez, Lindsay Pilko", category: "Mural")
+Portfolio.create(name: "The Oracle", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463826/AVW/Portfolio/31_The_Oracle_Poster_Design_Digital_2020.png", description: "Poster Design, 2020", category: "Digital")
+Portfolio.create(name: "Mars", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463807/AVW/Portfolio/32_Mars_from_the_Planetary_Babes_Series_Digital_2021.jpg", description: "Mars from the Planetary Babes Series, 2021", category: "Digital")
+Portfolio.create(name: "Stella", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463809/AVW/Portfolio/33_Stella_Private_Commission_Watercolor_on_Paper_8_x_10_2021.heic", description: "Private Commission, 8” x 10”, 2021", category: "Watercolor on Paper")
+Portfolio.create(name: "Cloud Babe", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463806/AVW/Portfolio/34_Cloud_Babe_Mural_for_Spirit_Walls_Festival_8_x_13_2018.jpg", description: "Mural for Spirit Walls Festival, 8' x 13', 2018", category: "Mural")
+Portfolio.create(name: "For Dawn", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463808/AVW/Portfolio/35_For_Dawn_Private_Commission_Watercolor_on_Paper_5_x_7_2021.heic", description: "Private Commission, 5” x 7”, 2021", category: "Watercolor on Paper")
+Portfolio.create(name: "Protectors", image: "https://res.cloudinary.com/dpkufvy59/image/upload/v1647463806/AVW/Portfolio/36_Protectors_Linoleum_Print_9_x_12_2017.jpg", description: "Linoleum Print, 9” x 12”, 2017", category: "Print")
+
+puts "...seeding done!"
+
+
+

@@ -52,7 +52,7 @@ const Header = () => {
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
-                    <textarea id="description" name="description" defaultValue="Type the description of your tarot event here!" rows="5" cols="40" onChange={handleChange}></textarea>
+                    <textarea id="description" name="description" defaultValue="Let me know what you need here!" rows="5" cols="40" onChange={handleChange}></textarea>
                     <button type="submit" value="Submit">Submit</button>
                 </form> 
             </div>     
