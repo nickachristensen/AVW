@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
+import { Background, Content } from "./Modal.styles";
+
 const Modal = ({ isOpen, close, children }) => {
     
     const contentRef = useRef();
@@ -21,11 +23,11 @@ const Modal = ({ isOpen, close, children }) => {
     if (!isOpen) return null;
     return (
     
-    <div>
-        <div ref={contentRef}>
+    <Background>
+        <Content ref={contentRef}>
             {children}
-        </div>
-    </div>
+        </Content>
+    </Background>
     );
 };
 
