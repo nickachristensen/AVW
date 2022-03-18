@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
-import { Wrapper, LinkWrap, Title, Buttons, PortfolioButton, ContactButton, HeaderLogo } from './Header.styles';
+import { Wrapper, LinkWrap, Title, Buttons, PortfolioButton, ContactButton, HeaderLogo, Content, P, FormTitle, Form, Button } from './Header.styles';
 import Logo from "../img/logoWithMoon.PNG"
 import BackgroundImg from '../img/Background.JPG'
 import Modal from "../Modal";
@@ -51,10 +51,10 @@ const Header = () => {
         </Link>
         <ContactButton onClick={() => setOpen((isOpen) => !isOpen)}>Contact</ContactButton>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 
-            <div>
-                <h1>Contact</h1>
-                <p>If you have questions about my work or are looking for me to create something amazing for you please fill out this form!</p>
-                <form ref={form} onSubmit={sendEmail}>
+            <Content>
+                <FormTitle>Contact</FormTitle>
+                <P>If you have questions about my work or are looking for me to create something amazing for you please fill out this form!</P>
+                <Form ref={form} onSubmit={sendEmail}>
                     <label for="fname">First name: </label>
                     <input type="text" id="fname" name="fname" defaultValue="Jane" onChange={handleChange}></input>
                     <label for="lname">Last name: </label>
@@ -63,9 +63,9 @@ const Header = () => {
                     <input type="text" id="email" name="email" defaultValue="janedoe@gmail.com" onChange={handleChange}></input>
                     <label for="description">Description: </label>
                     <textarea id="description" name="description" defaultValue="Let me know what you need here!" rows="5" cols="40" onChange={handleChange}></textarea>
-                    <button type="submit" value="Submit">Submit</button>
-                </form> 
-            </div>     
+                    <Button type="submit" value="Submit">Submit</Button>
+                </Form> 
+            </Content>     
         </Modal>
         </Buttons>
         </Wrapper>

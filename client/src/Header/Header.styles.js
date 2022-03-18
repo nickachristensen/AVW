@@ -80,3 +80,68 @@ export const ContactButton = styled.h3`
 export const LinkWrap = styled.a`
     width:  12%;
 `
+export const Content = styled.div`
+ font-family: 'Montserrat', sans-serif;
+ max-width: 500px;
+ z-index: 1;
+
+  @media (max-width: 600px) {
+    max-height: 450px;
+  }
+`
+export const FormTitle = styled.h3`
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  color:white;
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
+`
+export const P = styled.p`
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  color:white;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+    padding: 0px;
+  }
+`
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
+`
+export const Button = styled.button`
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 4px white;
+  border: 2px solid white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  `;
