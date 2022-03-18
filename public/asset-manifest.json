@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.1666071b.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/backgroundOption1.JPG": "/static/media/backgroundOption1.cca6d661cb7dc5fad520.JPG",
+    "static/media/logoWithMoon.PNG": "/static/media/logoWithMoon.dd51d6c4af407e9343b2.PNG",
+    "static/media/Background.JPG": "/static/media/Background.3d8e5f67495e22faf15c.JPG",
+    "index.html": "/index.html",
+    "main.1666071b.js.map": "/static/js/main.1666071b.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1666071b.js"
+  ]
+}

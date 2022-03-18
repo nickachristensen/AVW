@@ -29,7 +29,7 @@ const Header = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_4y7tc4j', 'template_tq5o7s6', form.current, 'user_N5u7K1vJl8lp6ZnSpwHm1')
+        emailjs.sendForm('service_y2hlkbf', 'template_za1nh1i', form.current, 'mBXf6gqh1i6oqSVd_')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
