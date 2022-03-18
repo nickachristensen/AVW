@@ -36,7 +36,10 @@ export const ModalTitle = styled.h1`
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  text-shadow: 0 0 5px black;
+
+    @media (max-width: 600px) {
+    font-size: 1.25rem;
+    }
   `
 
 export const ModalDescription = styled.p`
@@ -44,5 +47,8 @@ export const ModalDescription = styled.p`
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color:white;
-  text-shadow: 0 0 5px black;
+
+    @media (max-width: 600px) {
+    font-size: 1rem;
+    }
   `

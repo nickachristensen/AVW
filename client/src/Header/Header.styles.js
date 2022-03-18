@@ -44,18 +44,18 @@ export const HeaderLogo = styled.img`
 export const Title = styled.h1`
     font-size: 5rem;
     color: white;
-    padding-right: 20rem;
 
     @media (max-width: 600px) {
         font-size: 2rem;
-        padding-right: 0;
     }
     `;
 
 export const Buttons = styled.h3`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.5rem;
-    text-align: right;
-    padding-right: 4rem;
     text-decoration: none;
 
     @media (max-width: 600px) {
