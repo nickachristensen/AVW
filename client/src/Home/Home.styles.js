@@ -9,7 +9,9 @@ export const Wrapper = styled.div`
 
     @media (max-width: 600px) {
     background-size: cover;
+    background-position: 69%;
     width: 37
+
   }
 `;
 
