@@ -8,8 +8,8 @@ export const Wrapper = styled.div`
     border-radius: 10px;
 
     @media (max-width: 600px) {
-    background-size: initial;
-    background-repeat: repeat;
+    background-size: cover;
+    width: 37
   }
 `;
 
@@ -44,4 +44,5 @@ export const List = styled.li`
     padding: .5rem;
     `;
     
+
 

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
-import { Wrapper, Title, Buttons, ContactButton, HeaderLogo } from './Header.styles';
+import { Wrapper, LinkWrap, Title, Buttons, PortfolioButton, ContactButton, HeaderLogo } from './Header.styles';
 import Logo from "../img/logoWithMoon.PNG"
 import BackgroundImg from '../img/Background.JPG'
 import Modal from "../Modal";
@@ -39,13 +39,15 @@ const Header = () => {
 
     return (
         <Wrapper img={BackgroundImg}>
+        <LinkWrap>    
         <Link to= '/'>
         <HeaderLogo src={Logo} alt="homebackground"/>
         </Link>
+        </LinkWrap>
         <Title>Anna VanWalsen</Title>
         <Buttons>
-        <Link to= '/portfolio'>
-        Portfolio
+        <Link to= '/portfolio' style={{ textDecoration: 'none' }}>
+        <PortfolioButton>Portfolio</PortfolioButton>
         </Link>
         <ContactButton onClick={() => setOpen((isOpen) => !isOpen)}>Contact</ContactButton>
         <Modal isOpen={isOpen} close={() => setOpen(false)}> 

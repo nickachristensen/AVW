@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     background-color: black;
+    border-radius: 10px;
     `;
 
 export const PortfolioCards = styled.div`

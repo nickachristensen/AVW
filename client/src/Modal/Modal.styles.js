@@ -15,10 +15,10 @@ export const Background = styled.div`
 `;
 
 export const Content = styled.div`
-    background-color:#181510;
+    background-color:black;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 3px 15px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 15px 8px rgba(0, 0, 0, 0.5);
     color: white;
     border: 2px solid white;
 

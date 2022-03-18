@@ -34,14 +34,15 @@ export const Image = styled.img `
 export const ModalTitle = styled.h1`
   font-size: 1.75rem;
   font-weight: bold;
-  font-family: 'boecklins universe';
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-shadow: 0 0 5px black;
   `
 
 export const ModalDescription = styled.p`
   font-size: 1.2rem;
-  font-family: 'boecklins universe';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color:white;
   text-shadow: 0 0 5px black;
   `
