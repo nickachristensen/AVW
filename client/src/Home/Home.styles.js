@@ -28,6 +28,10 @@ export const Content = styled.div`
 export const Bio = styled.p`
     font-size: 2rem;
     color: white;
+
+    @media (max-width: 600px) {
+    font-size: 1rem;
+    }
     `;
 
 export const Title = styled.h1`
@@ -35,6 +39,10 @@ export const Title = styled.h1`
     color: white;
     padding: .5rem;
     text-decoration: underline;
+
+    @media (max-width: 600px) {
+    font-size: 1rem;
+    }
     `;
 
 export const List = styled.li`
@@ -42,6 +50,10 @@ export const List = styled.li`
     font-size: 1rem;
     text-align: left;
     padding: .5rem;
+
+    @media (max-width: 600px) {
+    font-size: .75rem;
+    }
     `;
     
 
